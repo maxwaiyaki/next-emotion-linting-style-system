@@ -1,7 +1,9 @@
+import Box from '../components/Box';
+
 const Home = () => (
-	<div>
-		<h2>Home Page</h2>
-	</div>
+	<Box>
+		<Box as='h2'>Home Page</Box>
+	</Box>
 );
 
 export default Home;
