@@ -1,0 +1,71 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:react/recommended",
+		"plugin:jsx-a11y/recommended",
+
+		"airbnb",
+
+		// Prettier plugin and recommended rules
+		"plugin:prettier/recommended"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"plugins": [
+		"react",
+		"prettier",
+		"react-hooks",
+		"jsx-a11y",
+		"emotion",
+		"import"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2020,
+		"sourceType": "module"
+	},
+	"rules": {
+		// Include .prettierrc.js rules
+		"prettier/prettier": "error",
+		"jsx-a11y/anchor-is-valid": 0,
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+		"no-unused-vars": "warn",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"import/no-unresolved": "off",
+		"react/jsx-props-no-spreading": "off",
+		"import/prefer-default-export": "off",
+		"react/no-array-index-key": "off",
+		// "react/forbid-prop-types": "off",
+		"import/extensions": [
+			"error",
+			"never",
+			{ "svg": "always", "png": "always", "jpg": "always", "jpeg": "always" }
+		],
+
+		//Emotion Config
+		"emotion/jsx-import": "error"
+	},
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	}
+}
