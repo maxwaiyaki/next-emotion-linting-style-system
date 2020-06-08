@@ -1,4 +1,5 @@
 {
+	"endOfLine": "auto",
 	"jsxSingleQuote": true,
 	"semi": true,
 	"singleQuote": true,
